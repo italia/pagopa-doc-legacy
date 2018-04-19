@@ -92,11 +92,7 @@ Sintesi dei cambiamenti
 
 `Torna all'indice <../index.rst>`__
 
-<<<<<<< HEAD
 .. |AGID_logo_carta_intestata-02.png| image:: ../media/header.png
-=======
-.. |AGID_logo_carta_intestata-02.png| image:: ../media/heder.png
->>>>>>> 42310ee39bc5cfd579f712eb294657ae292153ae
    :width: 5.90551in
    :height: 1.30277in
    
