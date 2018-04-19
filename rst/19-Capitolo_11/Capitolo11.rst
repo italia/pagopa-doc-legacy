@@ -15,19 +15,19 @@ dei Pagamenti-SPC direttamente o per il tramite di un soggetto
 intermediario. La procedura di adesione:
 
 -  individua gli obblighi e le responsabilità inerenti l’utilizzo del
-       Nodo dei Pagamenti-SPC;
+   Nodo dei Pagamenti-SPC;
 
 -  consente il censimento dell’Ente Creditore e del prestatore di
-       servizi di pagamento aderenti nel dominio gestito dal Nodo dei
-       Pagamenti-SPC;
+   servizi di pagamento aderenti nel dominio gestito dal Nodo dei
+   Pagamenti-SPC;
 
 -  prevede la comunicazione da parte dell’Ente Creditore dei dati di
-       configurazione necessari alla fruizione del servizio, ivi inclusi
-       i codici IBAN dei conti di accredito dell’Ente Creditore;
+   configurazione necessari alla fruizione del servizio, ivi inclusi
+   i codici IBAN dei conti di accredito dell’Ente Creditore;
 
 -  prevede la comunicazione da parte del prestatore di servizi di
-       pagamento dei dati necessari alla fruizione del servizio, come
-       specificati nell’accordo di servizio.
+   pagamento dei dati necessari alla fruizione del servizio, come
+   specificati nell’accordo di servizio.
 
 Adesione di un Ente Creditore.
 ------------------------------
@@ -94,7 +94,7 @@ sostituzione delle clausole difformi apposte, senza alcun ulteriore
 consenso tra le parti sottoscrittrici.
 
 L’adesione formale al Nodo dei Pagamenti-SPC consente il censimento del
-soggetto al Dominio (di cui al paragrafo 4.2.1) e comporta la nomina di
+soggetto al Dominio (`di cui al paragrafo 4.2.1 <../09-Capitolo_4/Capitolo4.rst#tabella-delle-controparti>`_) e comporta la nomina di
 un “Referente dei pagamenti”, ossia della persona indicata dal
 prestatore di servizi di pagamento, quale unico interlocutore con
 l’Agenzia per l’Italia Digitale relativamente alle attività di carattere
@@ -105,31 +105,31 @@ servizio da parte del Nodo dei Pagamenti-SPC, nella fase di adesione
 dovrà:
 
 1. operare per predisporre i necessari collegamenti tecnici, le
-       configurazioni e gli apparati atti a garantire l’accesso al
-       Servizio, secondo quanto indicato nella documentazione tecnica
-       fornita dall’Agenzia per l’Italia Digitale;
+   configurazioni e gli apparati atti a garantire l’accesso al
+   Servizio, secondo quanto indicato nella documentazione tecnica
+   fornita dall’Agenzia per l’Italia Digitale;
 
 2. operare per sviluppare e tenere aggiornate le componenti applicative
-       necessarie all’interoperabilità con il Nodo dei Pagamenti-SPC,
-       secondo quanto indicato nelle presenti specifiche attuative;
+   necessarie all’interoperabilità con il Nodo dei Pagamenti-SPC,
+   secondo quanto indicato nelle presenti specifiche attuative;
 
 3. avanzare l’eventuale richiesta di attivazione dei servizi opzionali,
-       corredata dai dati tecnici necessari per la loro fruizione, così
-       come sarà richiesto dall’Agenzia per l’Italia Digitale;
+   corredata dai dati tecnici necessari per la loro fruizione, così
+   come sarà richiesto dall’Agenzia per l’Italia Digitale;
 
 4. assicurarsi che il collegamento telematico non possa degradare il
-       livello di sicurezza del sistema;
+   livello di sicurezza del sistema;
 
 5. predisporre, comunicare tempestivamente e tenere costantemente
-       aggiornate le informazioni necessarie per la gestione del
-       sistema, quali:
+   aggiornate le informazioni necessarie per la gestione del
+   sistema, quali:
 
    a. i propri livelli di servizio intesi come tempi massimi entro cui
       deve essere fornita la risposta applicativa ad una richiesta di
-      servizio (vedi anche § 12.6);
+      servizio (`vedi anche § 12.6 <../20-Capitolo_12/Capitolo12.rst#livelli-di-servizio>`_);
 
    b. disponibilità dei servizi che il prestatore di servizi di
-      pagamento si impegna a rispettare (vedi anche 12.5.3);
+      pagamento si impegna a rispettare (`vedi anche 12.5.3 <../20-Capitolo_12/Capitolo12.rst#prestatori-di-servizi-di-pagamento-aderenti>`_);
 
    c. i riferimenti delle figure tecniche da contattare per le procedure
       di emergenza (Tavolo Operativo), eventualmente specificando l’area
@@ -147,7 +147,7 @@ Qualificazione di Intermediari e Partner tecnologici
 
 Come previsto dal modello di funzionamento, gli aderenti possono
 servirsi di Intermediari e/o Partner tecnologici per
-interconnettersi al Nodo di Pagamenti-SPC (cfr. § 1.1.2).
+interconnettersi al Nodo di Pagamenti-SPC (`cfr. § 1.1.2 <../06-Capitolo_1/Capitolo1.rst#intermediari-tecnologici-e-partner-tecnologici>`_).
 
 Il censimento degli Intermediari e dei Partner tecnologici viene
 effettuato dall’Agenzia dell’Italia Digitale a seguito del
@@ -158,14 +158,14 @@ funzionali a consentire alla controparte di autocertificare i
 seguenti adempimenti:
 
 1. predisposizione dei necessari collegamenti tecnici, delle
-       configurazioni e degli apparati atti a garantire l’accesso al
-       Servizio, secondo quanto indicato nella documentazione tecnica
-       fornita dall’Agenzia per l’Italia Digitale e pubblicata sul sito
-       web istituzionale;
+   configurazioni e degli apparati atti a garantire l’accesso al
+   Servizio, secondo quanto indicato nella documentazione tecnica
+   fornita dall’Agenzia per l’Italia Digitale e pubblicata sul sito
+   web istituzionale;
 
 2. sviluppo, manutenzione e aggiornamento delle componenti applicative
-       necessarie all’interoperabilità con il Nodo dei Pagamenti-SPC,
-       secondo quanto indicato nelle presenti specifiche attuative.
+   necessarie all’interoperabilità con il Nodo dei Pagamenti-SPC,
+   secondo quanto indicato nelle presenti specifiche attuative.
 
 
 L’Agenzia dell’Italia Digitale, a seguito della procedura di
@@ -181,7 +181,7 @@ Una volta sottoscritto il documento di adesione (lettera di
 adesione/accordo di servizio) l’Agenzia concorda con il soggetto
 aderente (Ente Creditore/PSP) il piano di attivazione che fissa
 tutti gli elementi tecnici necessari per la pianificazione dei
-lavori e la messa in esercizio (vedi §§ 11.1 e 11.2).
+lavori e la messa in esercizio (`vedi §§ 11.1 <../19-Capitolo_11/Capitolo11.rst#adesione-di-un-ente-creditore>`_ e `11.2 <../19-Capitolo_11/Capitolo11.rst#adesione-di-un-prestatore-di-servizi-di-pagamento>`_).
 
 La procedura di avvio in esercizio si conclude con la sottoscrizione da
 parte del Referente Tecnico del soggetto aderente, quale unico
@@ -254,17 +254,17 @@ dei Pagamenti-SPC, e precisamente, con l’accettazione di quanto
 stabilito nelle Linee guida e nei relativi allegati:
 
 1. dichiarano di avere preso visione del “Regolamento inerente l’uso del
-       marchio collettivo registrato pagoPA”, nella versione pubblicata
-       sul sito istituzionale dell’Agenzia per l’Italia Digitale e di
-       accettare incondizionatamente quanto in esso stabilito;
+   marchio collettivo registrato pagoPA”, nella versione pubblicata
+   sul sito istituzionale dell’Agenzia per l’Italia Digitale e di
+   accettare incondizionatamente quanto in esso stabilito;
 
 2. si obbligano a rispettare integralmente quanto previsto nel
-       “Regolamento inerente l’uso del marchio collettivo registrato
-       pagoPA”, nella versione pubblicata sul sito istituzionale
-       dell’Agenzia per l’Italia Digitale.
+   “Regolamento inerente l’uso del marchio collettivo registrato
+   pagoPA”, nella versione pubblicata sul sito istituzionale
+   dell’Agenzia per l’Italia Digitale.
 
 `Torna all'indice <../index.rst>`__
 
-.. |AGID_logo_carta_intestata-02.png| image:: ./myMediaFolder/media/image1.png
+.. |AGID_logo_carta_intestata-02.png| image:: ../media/header.png
    :width: 5.90551in
    :height: 1.30277in

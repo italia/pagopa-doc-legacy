@@ -2,7 +2,7 @@
 | |AGID_logo_carta_intestata-02.png|                                    |
 +-----------------------------------------------------------------------+
 
-**Sezione II - Composizione DELLE INFORMAZIONI ATTINENTI ALLO SCAMBIO DI**
+**Sezione II - COMPOSIZIONE DELLE INFORMAZIONI ATTINENTI ALLO SCAMBIO DI**
 **DATI TRA Enti creditori E PSP**
 
 Nella presente sezione sono date specifiche indicazioni circa lo scambio
@@ -11,6 +11,6 @@ servizi di pagamento.
 
 `Torna all'indice <../index.rst>`__
 
-.. |AGID_logo_carta_intestata-02.png| image:: ./myMediaFolder/media/image1.png
+.. |AGID_logo_carta_intestata-02.png| image:: ../media/header.png
    :width: 5.90551in
    :height: 1.30277in

@@ -31,12 +31,12 @@ Creditori ovvero attraverso dispositivi e funzioni dei PSP.
 Si fa presente che, nella gestione di tali *workflow* occorre tenere in
 considerazione i cosiddetti *Timeout*, ovvero i tempi massimi necessari
 a definire che un processo di pagamento ha avuto termine con un esito
-negativo, per i quali si rimanda al Capitolo 4 del documento “Indicatori di qualità per i Soggetti Aderenti” (si veda
-anche il `§ 12.6.1 </20-Capitolo_12/Capitolo12.rst#indicatori-di-qualità-del-nodo-dei-pagamenti-spc>`__ della Sezione IV).
+negativo, per i quali si rimanda al Capitolo 4 del documento “Indicatori di qualità per i Soggetti Aderenti” (`si veda
+anche il § 12.6.1 </20-Capitolo_12/Capitolo12.rst#indicatori-di-qualità-del-nodo-dei-pagamenti-spc>`__ della Sezione IV).
 
 I *workflow* di seguito descritti sono parte integrante delle
-implementazioni previste nel Nodo dei Pagamenti-SPC (vedi anche Sezione
-III).
+implementazioni previste nel Nodo dei Pagamenti-SPC (`vedi anche Sezione
+III </14-SEZIONE_III/SEZIONE_III_-_SPECIFICHE_DI_INTERCONNESSIONE.rst>`__).
 
 Processo di pagamento attivato presso l’Ente Creditore
 ------------------------------------------------------
@@ -106,35 +106,35 @@ utilizzeremo l’esempio specifico della modalità di incasso su iniziativa
 dell’Ente Creditore:
 
 1. l’utilizzatore finale, che ha ricevuto un avviso di pagamento, si
-       collega al portale dell’EC, ricerca il codice IUV indicato
-       sull'avviso stesso e compone il carrello con il pagamento che
-       intende effettuare;
+   collega al portale dell’EC, ricerca il codice IUV indicato
+   sull'avviso stesso e compone il carrello con il pagamento che
+   intende effettuare;
 
 2. l’Ente Creditore, tramite i propri Servizi telematici, trasmette al
-       Nodo dei Pagamenti-SPC la Richiesta di Pagamento Telematico (RPT)
-       o il carrello di RPT;
+   Nodo dei Pagamenti-SPC la Richiesta di Pagamento Telematico (RPT)
+   o il carrello di RPT;
 
-3. l’utilizzatore finale viene indirizzato sul WISP (vedi § 1.1.3) dove
-       sceglie il servizio che intende utilizzare (PSP e canale di
-       pagamento);
+3. l’utilizzatore finale viene indirizzato sul WISP (`vedi § 2.1.3 </07-Capitolo_2/Capitolo2.rst#scelta-del-servizio-di-pagamento-da-parte-dellutilizzatore-finale>`__) dove
+   sceglie il servizio che intende utilizzare (PSP e canale di
+   pagamento);
 
 4. in funzione della scelta effettuata dall’utilizzatore finale:
 
-a. in caso di pagamento con carte, il NodoSPC invia al PSP selezionato
-       la RPT, insieme alle commissioni applicate e alle indicazioni
-       relative all’autorizzazione del pagamento;
+   a. in caso di pagamento con carte, il NodoSPC invia al PSP selezionato
+      la RPT, insieme alle commissioni applicate e alle indicazioni
+      relative all’autorizzazione del pagamento;
 
-b. negli altri casi, il NodoSPC:
+   b. negli altri casi, il NodoSPC:
 
-   i.  invia la RPT al PSP;
+      i.  invia la RPT al PSP;
 
-   ii. attiva il canale prescelto e, se del caso, ridirige
-           l’utilizzatore finale sulle pagine messe a disposizione dal
-           PSP (nei grafici “Front-End PSP”), dove questi esegue il
-           pagamento;
+      ii. attiva il canale prescelto e, se del caso, ridirige
+          l’utilizzatore finale sulle pagine messe a disposizione dal
+          PSP (nei grafici “Front-End PSP”), dove questi esegue il
+          pagamento;
 
-c. nel caso di non scelta dell'utente o di timeout sul WISP, il NodoSPC
-   genera una o più RT negative e chiude il workflow;
+   c. nel caso di non scelta dell'utente o di timeout sul WISP, il NodoSPC
+      genera una o più RT negative e chiude il workflow;
 
 5. l'utilizzatore finale è re-diretto su una “*Thank You page*” e
    conosce l’esito della transazione;
@@ -171,7 +171,7 @@ gli schemi OBeP (*On-line Banking ePayment*), si riproduce un caso
 particolare dello stesso processo di pagamento descritto in precedenza.
 
 Per ulteriori dettagli si rimanda al documento monografico “” pubblicato
-sul sito dell'Agenzia (vedi Appendice 4).
+sul sito dell'Agenzia (`vedi Appendice 2 <../25-APPENDICE2/APPENDICE2–TRANSAZIONI_MYBANK_ATTRAVERSO_IL%20NODO_DEI_PAGAMENTI_-_SPC.rst>`__).
 
 Si segnala comunque che questa modalità di pagamento è soggetta a
 restrizioni e può non essere sempre disponibile per tutte le tipologie
@@ -198,14 +198,14 @@ L’esecuzione del pagamento ed il rilascio della relativa attestazione
 pagamento adottate dal PSP. Si distingue quindi l’autorizzazione:
 
 -  contestuale alla richiesta effettuata, in funzione dei livelli di
-       servizio pattuiti con il PSP, se l’utilizzatore finale ha
-       pre-autorizzato il pagamento (ad esempio: lettera di manleva o
-       altro strumento contrattuale);
+   servizio pattuiti con il PSP, se l’utilizzatore finale ha
+   pre-autorizzato il pagamento (ad esempio: lettera di manleva o
+   altro strumento contrattuale);
 
 -  non contestuale, se l’autorizzazione viene rilasciata successivamente
-       alla ricezione della RPT da parte del PSP, attraverso canali da
-       questo messi a disposizione (ad esempio: home banking, notifica
-       su app per smartphone o tablet, ecc.).
+   alla ricezione della RPT da parte del PSP, attraverso canali da
+   questo messi a disposizione (ad esempio: home banking, notifica
+   su app per smartphone o tablet, ecc.).
 
 In ogni caso il PSP deve restituire la RT in tempi certi e comunicati al
 proprio cliente prima del pagamento, in modo da consentire
@@ -235,7 +235,7 @@ sceglie PSP e canale di pagamento che non prevedono interazioni on-line
 2. l’Ente Creditore trasmette al Nodo dei Pagamenti-SPC la Richiesta di
    Pagamento Telematico (RPT);
 
-3. l’utilizzatore finale viene indirizzato sul WISP (vedi § 1.1.3), dove
+3. l’utilizzatore finale viene indirizzato sul WISP (`vedi § 2.1.3 </07-Capitolo_2/Capitolo2.rst#scelta-del-servizio-di-pagamento-da-parte-dellutilizzatore-finale>`__), dove
    sceglie il Servizio che intende utilizzare (PSP e canale di
    pagamento);
 
@@ -308,8 +308,8 @@ sulla base del PAN (Primary Account Number identificativo univoco di una
 carta), il PSP aderente a pagoPA.
 
 Gli utenti registrati che utilizzano il servizio di scelta e
-memorizzazione del pagamento messo a disposizione da AgID (vedi
-successivo § 1.1.3.1) saranno comunque liberi di modificare il PSP
+memorizzazione del pagamento messo a disposizione da AgID ( `vedi
+successivo § 2.1.3.1 <../07-Capitolo_2/Capitolo2.rst#servizio-di-scelta-e-memorizzazione-del-pagamento>`__) saranno comunque liberi di modificare il PSP
 abbinato alla propria carta accedendo alle funzioni offerte dalla
 componente WISP.
 
@@ -339,58 +339,58 @@ accesso dal sito di un soggetto aderente al Sistema pagoPA, tratta
 esclusivamente i seguenti dati personali:
 
 1. il numero di cellulare indicato dall’utente pagatore al fine di
-       ottenere il proprio User ID;
+   ottenere il proprio User ID;
 
 2. la password scelta dall’utente pagatore per poterla abbinare al User
-       ID ed identificare l’utente pagatore all’atto della sua
-       presentazione sul Sistema pagoPA;
+   ID ed identificare l’utente pagatore all’atto della sua
+   presentazione sul Sistema pagoPA;
 
 3. gli attributi identificativi dell’utente pagatore messi a
-       disposizione dallo SPID (Sistema Pubblico di Identità Digitale)
-       ove l’utente pagatore si identifichi sul Sistema pagoPA tramite
-       tale sistema di autenticazione in alternativa all’uso dei dati di
-       cui ai punti 1 e 2 che precedono;
+   disposizione dallo SPID (Sistema Pubblico di Identità Digitale)
+   ove l’utente pagatore si identifichi sul Sistema pagoPA tramite
+   tale sistema di autenticazione in alternativa all’uso dei dati di
+   cui ai punti 1 e 2 che precedono;
 
 4. i dati del PSP selezionato dall’utente pagatore tra quelli abilitati
-       ad operare sul sistema pagoPA;
+   ad operare sul sistema pagoPA;
 
 5. i dati della carta di pagamento indicati al PSP selezionato
-       dall’utente pagatore tra quelli abilitati ad operare sul sistema
-       pagoPA;
+   dall’utente pagatore tra quelli abilitati ad operare sul sistema
+   pagoPA;
 
 6. l’indirizzo di posta elettronica indicato dall’utente pagatore per
-       ricevere comunicazioni in merito alle operazioni di pagamento
-       richieste tramite il Sistema pagoPA.
+   ricevere comunicazioni in merito alle operazioni di pagamento
+   richieste tramite il Sistema pagoPA.
 
 I dati personali raccolti saranno trattati per consentire agli utenti
 delle pubbliche amministrazioni e degli altri soggetti aderenti al
 Sistema pagoPA:
 
 a. di eseguire on line e tramite il Sistema pagoPA le operazioni di
-       pagamento attraverso i PSP abilitati ad operare sul Sistema
-       pagoPA;
+   pagamento attraverso i PSP abilitati ad operare sul Sistema
+   pagoPA;
 
 b. di registrarsi sul Sistema pagoPA e ottenere un profilo identificato
-       da un proprio User ID e una propria password per la propria
-       identificazione sul sistema pagoPA, al fine di potere beneficiare
-       dei servizi accessori e strumentali che l’AgID mette a
-       disposizione degli utenti che vogliano eseguire con maggiore
-       facilitazione un pagamento elettronico sul sistema pagoPA;
+   da un proprio User ID e una propria password per la propria
+   identificazione sul sistema pagoPA, al fine di potere beneficiare
+   dei servizi accessori e strumentali che l’AgID mette a
+   disposizione degli utenti che vogliano eseguire con maggiore
+   facilitazione un pagamento elettronico sul sistema pagoPA;
 
 c. di memorizzare sul Sistema pagoPA alcune specifiche informazioni
-       inerenti le operazioni di pagamento e che sono necessarie per
-       finalizzare l’operazione di pagamento stessa, al fine di evitare,
-       per le operazioni di pagamento successive alla memorizzazione, di
-       dovere inserire nuovamente le stesse informazioni, e
-       segnatamente:
+   inerenti le operazioni di pagamento e che sono necessarie per
+   finalizzare l’operazione di pagamento stessa, al fine di evitare,
+   per le operazioni di pagamento successive alla memorizzazione, di
+   dovere inserire nuovamente le stesse informazioni, e
+   segnatamente:
 
-i.  i dati di cui ai punti (5) e (6) che precedono sono obbligatori per
-        l’erogazione in favore dell’utente pagatore del servizio di cui
-        alla lettera [a] che precede;
+   i. i dati di cui ai punti (5) e (6) che precedono sono obbligatori per
+      l’erogazione in favore dell’utente pagatore del servizio di cui
+      alla lettera [a] che precede;
 
-ii. mentre l’insieme dei dati di cui ai punti da (1) a (6) che precedono
-        sono obbligatori per l’erogazione in favore dell’utente pagatore
-        dei servizi di cui alle lettere [b] e [c] che precedono.
+   ii. mentre l’insieme dei dati di cui ai punti da (1) a (6) che precedono
+       sono obbligatori per l’erogazione in favore dell’utente pagatore
+       dei servizi di cui alle lettere [b] e [c] che precedono.
 
 Pertanto, i dati personali raccolti saranno trattati esclusivamente per
 consentire agli utenti delle pubbliche amministrazioni e degli altri
@@ -438,7 +438,7 @@ consapevole.
 Per questi motivi, i PSP che offrono tale servizio devono:
 
 a. indicare attraverso il *Catalogo Dati Informativi*
-   (vedi § **Errore. L'origine riferimento non è stata trovata.**) informazioni
+   (`vedi § 4.2.2 <../09-Capitolo_4/Capitolo4.rst#catalogo-dati-informativi>`__) informazioni
    diversificate per i pagamenti *on us* e i pagamenti *not* *on us*;
 
 b. inviare all’Agenzia, con le modalità da questa di volta in volta
@@ -470,7 +470,7 @@ Qualora l’utilizzatore finale chieda a vario titolo l’annullamento
 stato disposto, il sistema mette a disposizione dell’Ente Creditore e
 del PSP idonee funzionalità del Nodo dei Pagamenti-SPC per gestire detta
 operazione utilizzando la richiesta di una revoca della RT inviata in
-precedenza (vedi paragrafo **Errore. L'origine riferimento non è stata trovata.**).
+precedenza (`vedi paragrafo 4.4.5 <../09-Capitolo_4/Capitolo4.rst#storno-di-un-pagamento>`__).
 
 Come indicato dal modello esposto in Figura 7, lo “storno” del pagamento
 si esplica nell’invio di una richiesta di revoca (RR) da parte dell’Ente
@@ -508,8 +508,8 @@ Pagamenti in Attesa).
 Per rendere possibile il pagamento l’Ente Creditore ha l’obbligo di
 recapitare all’utilizzatore finale un avviso con gli estremi del
 pagamento da effettuare. Tale recapito deve obbligatoriamente avvenire
-sia in modalità analogica (tramite servizi postali), che digitale (vedi
-successivo § 1.9). L’Ente Creditore può inoltre adottare ulteriori
+sia in modalità analogica (tramite servizi postali), che digitale (`vedi
+successivo § 2.9 <../07-Capitolo_2/Capitolo2.rst#avvisatura-digitale-push-su-iniziativa-dellente-creditore>`__). L’Ente Creditore può inoltre adottare ulteriori
 misure per la diffusione degli avvisi di pagamento, per esempio rendere
 disponibili funzioni di stampa on line tramite il proprio sito.
 
@@ -549,42 +549,42 @@ Come si evince dal diagramma di Figura 9, il processo di pagamento si
 compone dei seguenti passi:
 
 1. l’utilizzatore finale, che ha ricevuto un avviso di pagamento
-       dall’Ente Creditore, utilizza le strutture messe a disposizione
-       dal PSP per effettuare il pagamento;
+   dall’Ente Creditore, utilizza le strutture messe a disposizione
+   dal PSP per effettuare il pagamento;
 
 2. il PSP richiede, tramite il NodoSPC, la verifica dell’esistenza e
-       della congruità del pagamento presso l’Ente Creditore
-       (interrogando l’Archivio dei Pagamenti in Attesa). In questa fase
-       l’Ente Creditore può comunicare all’utilizzatore finale
-       informazioni aggiuntive sul pagamento stesso
-       (vedi § **Errore.L'origine riferimento non è stata trovata.**, Sezione II);
+   della congruità del pagamento presso l’Ente Creditore
+   (interrogando l’Archivio dei Pagamenti in Attesa). In questa fase
+   l’Ente Creditore può comunicare all’utilizzatore finale
+   informazioni aggiuntive sul pagamento stesso
+   (`vedi § 7.4.5 Sezione II <../13-Capitolo_7/Capitolo7.rst#comunicazioni-allutilizzatore-finale>`__);
 
 3. l’utilizzatore finale autorizza il pagamento presso le strutture
-       messe a disposizione dal PSP;
+   messe a disposizione dal PSP;
 
 4. il PSP richiede all’Ente Creditore, attraverso il NodoSPC, la RPT
-       relativa all’IUV presente sull’avviso di pagamento;
+   relativa all’IUV presente sull’avviso di pagamento;
 
 5. l’Ente Creditore trasmette la Richiesta di Pagamento Telematico (RPT)
-       al NodoSPC, che la inoltra al PSP. Si noti che l’invio della RPT
-       al PSP potrà avvenire in due modalità:
+   al NodoSPC, che la inoltra al PSP. Si noti che l’invio della RPT
+   al PSP potrà avvenire in due modalità:
 
    a. in allegato alla risposta di richiesta di attivazione ricevuta
-          attraverso il NodoSPC (vedi precedente passo 4 (AgID si
-          riserva di comunicare la data di attivazione per tale
-          modalità),
+      attraverso il NodoSPC (vedi precedente passo 4 (AgID si
+      riserva di comunicare la data di attivazione per tale
+      modalità),
 
    b. con quella prevista dalla precedente versione di queste specifiche
-          (valida per un periodo di tempo non definito);
+      (valida per un periodo di tempo non definito);
 
 6. il PSP esegue il pagamento, genera la Ricevuta Telematica (RT) e
-       consegna copia della ricevuta di pagamento all’utilizzatore
-       finale;
+   consegna copia della ricevuta di pagamento all’utilizzatore
+   finale;
 
 7. il NodoSPC invia la RT ricevuta dal PSP all’Ente Creditore;
 
 8. l’utilizzatore finale può richiedere la copia della ricevuta e la
-       quietanza del pagamento presso il portale dell'Ente Creditore.
+   quietanza del pagamento presso il portale dell'Ente Creditore.
 
 Come si può evincere dall’analisi della sequenza di fasi sopra indicata,
 il PSP, una volta ottenuta l’autorizzazione dall’utilizzatore finale
@@ -594,7 +594,7 @@ questi due momenti:
 A. alla conclusione positiva della fase di verifica,
 
 B. alla conclusione positiva della fase di attivazione della RPT (che
-       allega la RPT) ovvero alla ricezione della RPT.
+   allega la RPT) ovvero alla ricezione della RPT.
 
 Qualora il PSP consenta di effettuare il pagamento al tempo [A] deve
 tenere presente la necessità di gestire correttamente l’eventuale
@@ -616,7 +616,7 @@ documento stesso.
 
 Per comunicare al PSP tali variazioni o ulteriori informazioni legate al
 pagamento, utili per informare l'utilizzatore finale, l'Ente Creditore
-deve utilizzare le modalità indicate al § 7.4.5 della Sezione II.
+deve utilizzare le modalità indicate al `§ 7.4.5 Sezione II <../13-Capitolo_7/Capitolo7.rst#comunicazioni-allutilizzatore-finale>`__
 
 Attivazione della richiesta di pagamento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -663,12 +663,11 @@ sostituzione della iniziale richiesta di “*verifica del pagamento in attesa*�
 con la richiesta del “*numero dell'avviso*”.
 
 Il NodoSPC riceve la richiesta del numero di avviso dal PSP, controlla
-sul Catalogo dei servizi (vedi §§ **Errore. L'origine riferimento non è stata trovata.**
-e **Errore. L'origine riferimento non è stata trovata.**),
+sul Catalogo dei servizi (vedi §§ `4.2.4 <../09-Capitolo_4/Capitolo4.rst#catalogo-dei-servizi>`_ e `5.3.11 <../11-Capitolo_5/Capitolo5.rst#catalogo-dei-servizi>`_),
 la congruità della richiesta e la inoltra all'Ente
 Creditore che, accedendo ai propri archivi, assegna alla richiesta il
 corretto numero avviso. Da questo momento in poi, il processo di
-pagamento avviene con le stesse modalità indicate al precedente § 1.2.
+pagamento avviene con le stesse modalità indicate al precedente § `2.2 <../07-Capitolo_2/Capitolo2.rst#processo-di-pagamento-attivato-presso-il-psp>`_.
 
 |image10|
 
@@ -689,9 +688,9 @@ decreto legislativo 27 gennaio 2010, n. 11, ovvero per richieste
 regolamentate connesse all’utilizzo di carte di pagamento (c.d.:
 procedura di *charge back*) chieda al proprio prestatore di servizi di
 pagamento il rimborso di un pagamento già completato oppure in caso di
-annullo tecnico (vedi § 1.3.1), il sistema pagoPA mette a disposizione
+annullo tecnico (`vedi § 2.3.1 <../07-Capitolo_2/Capitolo2.rst#annullo-tecnico>`_), il sistema pagoPA mette a disposizione
 di PSP e Enti Creditori idonee funzionalità per gestire la revoca della
-RT inviata in precedenza (vedi paragrafo **Errore. L'origine riferimento non è stata trovata.**).
+RT inviata in precedenza (`vedi paragrafo 4.4.4 <../09-Capitolo_4/Capitolo4.rst#revoca-della-ricevuta-telematica>`__).
 
 |image11|
 
@@ -710,7 +709,8 @@ sanitarie già eseguite, ecc.) inviando un ER di esito negativo.
 
 In caso contrario l’Ente Creditore si comporta come segue:
 
-a) nel caso di revoca per annullo tecnico (vedi § 1.3.1) invia un ER di
+a) nel caso di revoca per annullo tecnico (`vedi paragrafo vedi § 2.3.1  <../07-Capitolo_2/Capitolo2.rst#annullo-tecnico>`__) 
+   invia un ER di
    esito positivo, annulla l’esito del pagamento e aggiorna i propri
    archivi informatici ripristinando la posizione originale. L’Ente
    Creditore esegue tali operazioni tenendo conto della emergenza
@@ -735,14 +735,14 @@ L’annullo tecnico è una casistica dell’invio di una richiesta di revoca
 che il PSP può invocare unicamente ricorra uno dei seguenti casi:
 
 a) Invio di una Ricevuta Telematica (RT) con esito **positivo**,
-       tuttavia l’utilizzatore finale non ha ricevuto nessun addebito né
-       il PSP ha emesso alcuna attestazione di pagamento (scontrino,
-       ricevuta, e-mail, ecc.);
+   tuttavia l’utilizzatore finale non ha ricevuto nessun addebito né
+   il PSP ha emesso alcuna attestazione di pagamento (scontrino,
+   ricevuta, e-mail, ecc.);
 
 b) Invio di una Ricevuta Telematica (RT) con esito **negativo**,
-       tuttavia l’utilizzatore finale ha ricevuto un addebito e il PSP
-       ha emesso un’attestazione di pagamento (scontrino, ricevuta,
-       e-mail, ecc. Vedi § 1.5).
+   tuttavia l’utilizzatore finale ha ricevuto un addebito e il PSP
+   ha emesso un’attestazione di pagamento (scontrino, ricevuta,
+   e-mail, ecc. `Vedi § 2.5 <../07-Capitolo_2/Capitolo2.rst#attestazione-del-pagamento>`__).
 
 Al di fuori delle circostanze sopra descritte l’utilizzo dell’annullo
 tecnico non è ammesso.
@@ -777,14 +777,14 @@ Avviso analogico
 .. _Avviso analogico:
 
 Per i pagamenti per i quali sono prodotti avvisi di pagamento analogici,
-oltre al logotipo del sistema pagoPA (cfr. § **Errore. L'origine riferimento non è stata trovata.**),
+oltre al logotipo del sistema pagoPA (`cfr. § 11.5 <../19-Capitolo_11/Capitolo11.rst#utilizzo-del-marchio-pagopa>`_),
 risultano indispensabili per l'esecuzione del pagamento stesso le seguenti informazioni:
 
 a) Codice fiscale dell’Ente Creditore;
 
 b) Codice dell'Avviso di pagamento, che contiene al suo interno il
-       codice IUV assegnato dall’Ente Creditore (vedi § 2.2
-       dell’Allegato A alle Linee guida );
+   codice IUV assegnato dall’Ente Creditore (vedi § 2.2
+   dell’Allegato A alle Linee guida "Specifiche attuative dei codici identificativi di versamento, riversamento e rendicontazione");
 
 c) Importo del versamento.
 
@@ -828,8 +828,8 @@ presenti sull’avviso di pagamento.
 
 Per questo motivo tale documento è corredato, oltre che dati essenziali
 sopra riportati, anche da un insieme di elementi grafici facilmente
-leggibili e decodificabili da apposite apparecchiature (vedi anche il §
-**Errore. L'origine riferimento non è stata trovata.**).
+leggibili e decodificabili da apposite apparecchiature 
+(`vedi anche il § 7.4.2 <../13-Capitolo_7/Capitolo7.rst#automazione-dellavviso-di-pagamento-analogico>`_).
 
 Avviso digitale
 ~~~~~~~~~~~~~~~
@@ -837,9 +837,8 @@ Avviso digitale
 
 Per i pagamenti per i quali sono messi a disposizione dell'utilizzatore
 finale avvisi di pagamento analogici, l’Ente Creditore deve generare
-corrispondenti avvisi digitali secondo il formato indicato al §
-**Errore. L'origine riferimento non è stata trovata.** e inviarli al
-NodoSPC con le modalità indicate al § **Errore. L'origine riferimento non è stata trovata.**.
+corrispondenti avvisi digitali secondo il formato indicato al `§ 5.4 <../11-Capitolo_5/Capitolo5.rst#avvisatura-digitale>`_ 
+e inviarli al NodoSPC con le modalità indicate al  `§ 8.1.6 <../15-Capitolo_8/Capitolo8.rst#processo-di-avvisatura-digitale-push-su-iniziativa-dellente-creditore>`__.
 
 Attestazione del pagamento
 --------------------------
@@ -865,10 +864,7 @@ liberatoria, può essere utilizzata dall’utilizzatore finale per ottenere
 quietanza da parte dell’EC.
 
 Le copie analogiche prodotte dall’Ente Creditore o dai PSP devono
-necessariamente contenere, oltre al logo del sistema pagoPA (cfr. §
-**Errore. L'origine riferimento non è stata trovata.**) [2]_ almeno le
-seguenti informazioni, per il cui contenuto si rimanda al capitolo
-**Errore. L'origine riferimento non è stata trovata.** della Sezione II:
+necessariamente contenere, oltre al logo del sistema pagoPA (`cfr. § 11.5 <../19-Capitolo_11/Capitolo11.rst#utilizzo-del-marchio-pagopa>`_ almeno le seguenti informazioni, per il cui contenuto si rimanda al `capitolo 5 ella Sezione II <../11-Capitolo_5/Capitolo5.rst>`_:
 
 a) Data dell’operazione
 
@@ -887,7 +883,7 @@ g) Causale del versamento indicata nella RPT.
 Nel caso del pagamento effettuato presso il PSP, quest’ultimo deve
 rendere disponibile, anche attraverso la stampa di un pre-scontrino, le
 indicazioni di dettaglio del pagamento previste dal
-§ **Errore. L'origine riferimento non è stata trovata.**.
+`§ 7.4.5 <../13-Capitolo_7/Capitolo7.rst#comunicazioni-allutilizzatore-finale>`__.
 
 Identificazione dell’utilizzatore finale
 ----------------------------------------
@@ -895,7 +891,7 @@ Identificazione dell’utilizzatore finale
 
 Nello schema di Figura 12 è rappresentato il circuito di “trust” che si
 viene a stabilire tra utilizzatore finale e PSP nel caso sia utilizzato
-il processo attivato presso l’Ente Creditore (cfr. § 1.1). Quest’ultimo,
+il processo attivato presso l’Ente Creditore (`§ cfr. § 2.1 <../07-Capitolo_2/Capitolo2.rst#processo-di-pagamento-attivato-presso-lente-creditore>`__). Quest’ultimo,
 in piena autonomia, stabilisce se identificare il soggetto che effettua
 il pagamento. In tal caso la modalità principale di identificazione sarà
 SPID.
@@ -928,8 +924,8 @@ Riconciliazione dei pagamenti
 -----------------------------
 .. _Riconciliazione dei pagamenti:
 
-Con rifermento al “Ciclo di vita del pagamento” (vedi paragrafo
-**Errore. L'origine riferimento non è stata trovata.**), una volta
+Con rifermento al “Ciclo di vita del pagamento” 
+(`vedi paragrafo 1.4 <../06-Capitolo_1/Capitolo1.rst#ciclo-di-vita-del-pagamento>`__), una volta
 effettuata la fase di “Regolamento contabile” tra i PSP, l’Ente
 Creditore provvede a riconciliare le Ricevute Telematiche (RT) con le
 informazioni contabili fornite dal proprio istituto tesoriere o da Poste
@@ -946,8 +942,7 @@ due diverse modalità di riconciliazione.
 
 I dati in possesso dell’Ente Creditore, necessari per eseguire la
 riconciliazione con la disposizione di accredito inviata al PSP del
-debitore, sono definiti al paragrafo Errore. L'origine riferimento non è
-stata trovata. della Sezione II, per quanto riguarda la Ricevuta
+debitore, sono definiti al `paragrafo 5.3.2 della Sezione II <../11-Capitolo_5/Capitolo5.rst#ricevuta-telematica-rt>`_, per quanto riguarda la Ricevuta
 Telematica (RT) e nella Sezione II dell’Allegato A alle Linee guida per
 ciò che riguarda i dati del Flusso di rendicontazione.
 
@@ -968,18 +963,17 @@ riconciliazione in modalità singola.
 
 L’operazione di riconciliazione in modalità singola viene effettuata
 dall’Ente Creditore sulla base della seguente coppia di informazioni
-(vedi paragrafo **Errore. L'origine riferimento non è stata trovata.**
-della Sezione II) presenti sulla RT inviata dal PSP all’Ente Creditore:
+(`vedi paragrafo 5.3.2 della Sezione II <../11-Capitolo_5/Capitolo5.rst#ricevuta-telematica-rt>`__) presenti sulla RT inviata dal PSP all’Ente Creditore:
 
 a. identificativoUnivocoVersamento (IUV) che deve coincidere con la
-       componente <IUV> della causale della disposizione di accredito
-       inviata al PSP dell’Ente Creditore, secondo le indicazioni di cui
-       alla Sezione I dell’Allegato A alle Linee guida;
+   componente <IUV> della causale della disposizione di accredito
+   inviata al PSP dell’Ente Creditore, secondo le indicazioni di cui
+   alla Sezione I dell’Allegato A alle Linee guida;
 
 b. ì-esima occorrenza del dato singoloImportoPagato della struttura
-       datiSingoloPagamento che deve coincidere con il dato presente
-       nell’informazione *Amount* della disposizione di accredito
-       inviata dal PSP al PSP dell’Ente Creditore.
+   datiSingoloPagamento che deve coincidere con il dato presente
+   nell’informazione *Amount* della disposizione di accredito
+   inviata dal PSP al PSP dell’Ente Creditore.
 
 Se ritenuto opportuno, l’Ente Creditore può verificare che il dato
 identificativoUnivocoRiscossione della RT corrisponda o con il dato
@@ -1018,13 +1012,13 @@ presenti nelle Ricevute Telematiche (RT) memorizzate presso di sé sulla
 base della seguente coppia di informazioni:
 
 a. identificativoUnivocoVersamento (IUV) presente sulla RT inviata
-       all’Ente Creditore che deve coincidere con lo stesso dato
-       presente nella struttura datiSingoliPagamenti del Flusso di
-       rendicontazione;
+   all’Ente Creditore che deve coincidere con lo stesso dato
+   presente nella struttura datiSingoliPagamenti del Flusso di
+   rendicontazione;
 
 b. singoloImportoPagato presente sulla RT inviata all’Ente Creditore che
-       deve coincidere con il dato omonimo presente nella struttura dati
-       datiSingoliPagamenti del Flusso di rendicontazione.
+   deve coincidere con il dato omonimo presente nella struttura dati
+   datiSingoliPagamenti del Flusso di rendicontazione.
 
 |image14|
 
@@ -1037,7 +1031,7 @@ rendicontazione.
 
 Il Nodo dei Pagamenti-SPC fornisce apposite funzioni centralizzate a
 disposizione dei prestatori di servizi di pagamento e degli Enti
-Creditori (vedi § **Errore. L'origine riferimento non è stata trovata.**),
+Creditori (`vedi § 4.4.6 <../09-Capitolo_4/Capitolo4.rst#rendicontazione-per-gli-enti-creditori>`_),
 con le quali i primi possono inviare il Flusso di
 rendicontazione e gli altri ricevere i dati ivi contenuti.
 
@@ -1127,7 +1121,7 @@ acquisto consta dei seguenti passi:
 
    c. provincia di residenza del soggetto pagatore;
 
-5. l’utilizzatore finale viene indirizzato sul WISP (vedi § 1.1.3) che
+5. l’utilizzatore finale viene indirizzato sul WISP (`vedi § 2.1.3 <../07-Capitolo_2/Capitolo2.rst#scelta-del-servizio-di-pagamento-da-    parte-dellutilizzatore-finale>`_) che
    gli consente di scegliere il servizio di pagamento che intende
    utilizzare NB: la PA deve porre attenzione alla composizione del
    carrello poiché in questa circostanza le opzioni disponibili saranno
@@ -1135,7 +1129,7 @@ acquisto consta dei seguenti passi:
    digitale;
 
 6. l’utilizzatore finale autorizza il pagamento (vedi passi 4 e 5 del
-   workflow di cui al § 1.1.1, pagina 2);
+   workflow di cui al `§ 2.1.1, pagina 29 <../07-Capitolo_2/Capitolo2.rst#processo-di-pagamento-con-re-indirizzamento-on-line>`_);
 
 7. il PSP, sulla base delle informazioni ricevute per mezzo della RPT,
    genera la marca da bollo digitale e la restituisce alla PA, per conto
@@ -1194,7 +1188,7 @@ Gli attori che intervengono nel processo sono:
 -  gli utilizzatori finali, che si iscrivono al servizio ed effettuano i
    pagamenti;
 
--  gli Enti Creditori, che detengono che, come indicato al § 1.4, devono
+-  gli Enti Creditori, che detengono che, come indicato al `§ 2.4 <../07-Capitolo_2/Capitolo2.rst#avviso-di-pagamento>`_, devono
    inviare gli avvisi digitali;
 
 -  il sistema pagoPA, in particolare il Nodo dei Pagamenti-SPC, che
@@ -1213,9 +1207,8 @@ Gli attori che intervengono nel processo sono:
 Come schematizzato nella Figura 16, le fasi nelle quali si articola il
 processo integrato di avvisatura e pagamento sono:
 
-a. iscrizione al servizio da parte dell'utilizzatore finale (fase di
-       *enrolment*);
-
+a. iscrizione al servizio da parte dell'utilizzatore finale (fase di *enrolment*);
+       
 b. inoltro dell'avviso al debitore;
 
 c. pagamento del dovuto parte dell'utilizzatore finale.
@@ -1269,7 +1262,7 @@ L'iscrizione al servizio di avvisatura può essere effettuata
 dall'utilizzatore finale aderendo ad uno dei servizi messi a
 disposizione da parte dei Prestatori di servizi di pagamento, che
 possono scegliere di gestire il servizio sia in modalità *push*, sia in
-modalità *pull* (vedi § 1.10).
+modalità *pull* (`vedi § 2.10 <../07-Capitolo_2/Capitolo2.rst#avvisatura-digitale-pull-verifica-della-posizione-debitoria>`_).
 
 L'utilizzatore finale usa le applicazioni predisposte dai PSP che
 potranno essere utilizzate su PC, *smartphone*, *tablet*. Il PSP può
@@ -1283,8 +1276,7 @@ servizio di avvisatura in modalità *push*.
 
 Il protocollo di colloquio tra NodoSPC e i PSP, previsto per la fase di
 *enrolment* presso i PSP e da utilizzare esclusivamente per la modalità
-di inoltro *push*, è descritto nel § **Errore. L'origine riferimento non**
-**è stata trovata.** della Sezione III.
+di inoltro *push*, è descritto nel `§ 9.2.7 della Sezione III. <../16-Capitolo_9/Capitolo9.rst#avvisatura-digitale-push-su-iniziativa-dellente-creditore>`__
 
 Iscrizioni presso più Prestatori di servizi di pagamento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1329,9 +1321,7 @@ circa l'esito della presa in carico da parte del PSP: nel primo caso in
 modalità asincrona, sempre via file transfer; nel secondo in modalità
 sincrona all'interno della stessa chiamata SOAP.
 
-Il processo di invio degli avvisi è ampiamente dettagliato nel §
-**Errore. L'origine riferimento non è stata trovata.** della Sezione
-III.
+Il processo di invio degli avvisi è ampiamente dettagliato nel `§ 8.1.6 della Sezione III. <../15-Capitolo_8/Capitolo8.rst#processo-di-avvisatura-digitale-push-su-iniziativa-dellente-creditore>`__ 
 
 Inoltro degli avvisi al debitore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1350,8 +1340,7 @@ contenente gli avvisi digitali che intende far recapitare ai propri
 utenti, attraverso il sistema di file transfer sicuro messo a
 disposizione.
 
-Completata la sotto fase di recapito dell'avviso digitale (vedi
-successivo § 1.9.2.3), nella quale la componente di avvisatura del
+Completata la sotto fase di recapito dell'avviso digitale (`vedi successivo § 2.9.2.3 <../07-Capitolo_2/Capitolo2.rst#recapito-dellavviso-al-debitore>`__), nella quale la componente di avvisatura del
 NodoSPC provvede ad effettuare l'operazione di recapito e a registrarne
 l'esito, il NodoSPC predispone un flusso contenente l'esito del recapito
 dei singoli avvisi di pagamento effettuato nella fase precedente e lo
@@ -1385,7 +1374,7 @@ a) **sulla base delle informazioni inviate dall’Ente Creditore**
        dell’utilizzatore finale e lo stesso abbia scelto tale modalità;
 
    ii. *via e-mail:* se sull’avviso è presente l’indirizzo fornito
-           dell’utilizzatore finale;
+       dell’utilizzatore finale;
 
 b) **in funzione del codice fiscale del debitore memorizzato**
    **nell’archivio delle iscrizioni** al servizio di avvisatura (modalità
@@ -1536,7 +1525,7 @@ Pagamento del dovuto
 
 Per quanto riguarda la fase del pagamento del dovuto, si ricorda che
 l'operazione potrà essere effettuato in modalità integrata con le
-modalità previste per il pagamento presso il PSP (vedi § 1.2), qualora
+modalità previste per il pagamento presso il PSP (`vedi § 2.2 <../07-Capitolo_2/Capitolo2.rst#processo-di-pagamento-attivato-presso-il-psp>`__), qualora
 il Prestatore di servizi di pagamento dell'utilizzatore finale lo
 consenta.
 
@@ -1563,7 +1552,7 @@ tempo successivo.
 .. [4]
    `vedi fase 2a della Figura 19 <../07-Capitolo_2/Capitolo2.rst#inoltro-degli-avvisi-al-debitore>`_
 
-.. |AGID_logo_carta_intestata-02.png| image:: ./myMediaFolder/media/image1.png
+.. |AGID_logo_carta_intestata-02.png| image:: ../media/header.png
    :width: 5.90551in
    :height: 1.30277in
 .. |image1| image:: ./myMediaFolder/media/image2.png

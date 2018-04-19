@@ -81,8 +81,7 @@ sistema sono riconducibili alle categorie appresso indicate:
    applicabile ai pagamenti contestuali alla richiesta di servizio, nei
    quali l’autorizzazione può essere gestita;
 
-   -  attraverso il re indirizzamento on line verso sistemi atti a
-          gestire la transazione,
+   -  attraverso il re indirizzamento on line verso sistemi atti a gestire la transazione,
 
    -  gestita dal PSP con modalità esterne al processo;
 
@@ -106,6 +105,6 @@ del contesto tecnologico.
 
 `Torna all'indice <../index.rst>`__
 
-.. |AGID_logo_carta_intestata-02.png| image:: ./myMediaFolder/media/image1.png
+.. |AGID_logo_carta_intestata-02.png| image:: ../media/header.png
    :width: 5.90551in
    :height: 1.30277in
